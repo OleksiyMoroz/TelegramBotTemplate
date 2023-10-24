@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Webhook launch",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/template.WebHost/bin/Debug/net7.0/template.WebHost.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/template.WebHost",
+            "stopAtEntry": false,
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "BOT_TOKEN": "6385309971:AAF1ajtuMNPVxw4fBfbnpPFWw2DNuXbo1qo",
+                "BOT_WEBHOOK_DOMAIN": "https://404b-91-196-123-9.ngrok-free.app",
+                "BOT_WEBHOOK_PATH": "/tbotwebhook",
+                "BOT_LOCALHOST": "http://localhost:5011"
+            }
+        }
+    ]
+}
